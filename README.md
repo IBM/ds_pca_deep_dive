@@ -18,7 +18,7 @@ In the end, we will summarize our discussion with various pointers to alternativ
 
 1. Log into IBM Watson Studio service.
 2. Start a notebook in Watson Studio.
-4. Deep dive into intuitiona and theory of PCA.
+4. Deep dive into intuition and theory of PCA.
 5. Consider four scenarios with Examples:
 5.1. Dimension Reduction
 5.2. Visualization
@@ -42,7 +42,7 @@ In the end, we will summarize our discussion with various pointers to alternativ
 This Code Pattern consists of following activities:
 
 * [Run a Jupyter notebook in the IBM Watson Studio](#run-a-jupyter-notebook-in-the-ibm-watson-studio).
-* [Deep Dive into Principal Component Analysis.](#deep-dive-into-principal-component-analysis).
+* [Deep Dive into Principal Component Analysis](#deep-dive-into-principal-component-analysis).
 
 ## Run a Jupyter notebook in the IBM Watson Studio
 
