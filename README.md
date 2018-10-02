@@ -1,29 +1,30 @@
 
-## Deepdive into Principal Component Analysis (PCA).
+## Deep dive into Principal Component Analysis (PCA)
 
-This Code Pattern will guide you through how to use `Scikit Learn` and `Python` in IBM Watson Studio. The goal is to use a Jupyter notebook is to deep dive into Principal Component Analysis using the various dataset that are shipped with 'Scikit Learn'.
+This Code Pattern will guide you through how to use `Scikit Learn` and `Python` in IBM Watson Studio. The goal is to use a Jupyter notebook to deep dive into Principal Component Analysis (PCA) using various datasets that are shipped with `Scikit Learn`.
 
-We will first give a short intuitive explanation for principal component analysis and why it makes sense. Then we will go deeper into the actual derivation of Principal Components using the principle of maximizing the total projected variances onto components. Once we have understood the theory and concept, we will dive deeper into the use cases and examples. We will consider four scenarios with examples.
+We will first give a intuitive explanation of PCA and why it makes sense. Then we will go deeper into the actual derivation of Principal Components using the principle of maximizing the total projected variances onto components. Once we have understood the theory and concept, we will dive deeper into the use cases and examples. We will consider four scenarios with examples.
 
 * Dimension Reduction
 * Visualization
 * Noise Filtering
-* As a pre-processor for ML algorithms.
+* As a pre-processor for Machine Learning (ML) algorithms
 
-In the end, we will summarize our discussion with various pointers to alternatives to PCA.
+In the end, we will summarize our discussion with links to PCA alternatives.
 
 ![](doc/source/images/architecture.png)
 
 ## Flow
 
 1. Log into IBM Watson Studio service.
-2. Start a notebook in Watson Studio.
+2. Create a Watson Studio project and add assets like Jupyter notebooks.
+3. Launch a Jupyter notebook in Watson Studio.
 4. Deep dive into intuition and theory of PCA.
-5. Consider four scenarios with Examples:
-5.1. Dimension Reduction
-5.2. Visualization
-5.3. Noise Filtering
-5.4. As a pre-processor for ML algorithms.
+5. Use Scikit Learn to work through 4 scenarios:
+    * Dimension Reduction
+    * Visualization
+    * Noise Filtering
+    * As a pre-processor for ML algorithms
 
 ## Included components
 
@@ -57,7 +58,7 @@ This Code Pattern consists of following activities:
 Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
-> * View the completed [notebook](https://github.com/aloknsingh/ds_pca_deep_dive/blob/master/notebooks/deep_dive_pca.ipynb) and its outputs, as is.
+> * View the completed [notebook](https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * When complete, continue this code pattern by jumping ahead to the [Principal Component Analysis in Practice.](#principal-component-analysis-in-practice) section.
 
@@ -90,7 +91,7 @@ Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 * Enter this URL:
 
 ```
-https://github.com/aloknsingh/ds_pca_deep_dive/blob/master/notebooks/deep_dive_pca.ipynb
+https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb
 ```
 
 * Click the `Create` button.
@@ -123,7 +124,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-### 7. Save and Share
+### 5. Save and Share
 
 #### How to save your work:
 
@@ -149,40 +150,41 @@ options to specify exactly what you want shared from your notebook:
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
 
-## Deep Dive into Principal Component Analysis.
+## Deep Dive into Principal Component Analysis
 
-### Principal Component Analysis (PCA) Intuition.
+The notebook is well documented and will guide you through the exercise. Some of the main tasks that will be covered include:
 
-Through various real life examples, we give user intuition of PCA.
+### Principal Component Analysis (PCA) Intuition
 
-### PCA Mathemathical Formulation.
+Through various real life examples, we discuss the theory and intuition behind PCA.
 
-We give user mathemathical foundation and derive the key idea of PCA.
+### PCA Mathemathical Formulation
 
-### Principal Component Analysis in Practice.
- 
-Once, We have seen, intuition and mathematical formulation of Principal Component Analysis. We explore PCA through various examples. We will be using Scikit-learn and matplotlib to dive deep into examples.
+We cover the mathemathical foundation and derive the key ideas of PCA.
 
-We will look into following four use cases:
+### Principal Component Analysis in Practice
 
-1. PCA for Dimension Reduction.
+We explore PCA through various examples. We will be using `Scikit-learn` and `matplotlib` to dive deep into the following examples:
 
-2. PCA for Visualization and Better Insights.
-
-3. PCA for Noise Filtering.
-
-4. PCA as a Preprocessor for ML algorithms.
+- PCA for Dimension Reduction
+- PCA for Visualization and Better Insights
+- PCA for Noise Filtering
+- PCA as a Preprocessor for ML algorithms
 
 ## Sample Output
 
-The following screen-shot shows, derivation of PCA by maximizing total projected variances.
+The following screen-shot shows derivation of PCA by maximizing total projected variances:
+
 ![](doc/source/images/pca_derivation.png)
 
-The following screen-shot shows, how one can do simple classification using PCA.
+The following screen-shot shows how you can do simple classification using PCA:
+
 ![](doc/source/images/pca_classification.png)
 
-The following screen-shots show, how to de-noise a noisy image using PCA.
+The following screen-shots shows how to de-noise a image using PCA:
+
 ![](doc/source/images/pca_noisy_input_image.png)
+
 ![](doc/source/images/pca_noisy_output_image.png)
 
 Awesome job following along! Now go try and take this further or apply it to a different use case!
