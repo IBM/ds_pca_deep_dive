@@ -1,5 +1,5 @@
 
-## Deepdive into Principal Component Analysis (PCA).
+## Deep dive into Principal Component Analysis (PCA)
 
 This Code Pattern will guide you through how to use `Scikit Learn` and `Python` in IBM Watson Studio. The goal is to use a Jupyter notebook to deep dive into Principal Component Analysis (PCA) using various datasets that are shipped with `Scikit Learn`.
 
