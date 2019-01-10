@@ -1,7 +1,6 @@
+# Deep dive into Principal Component Analysis (PCA)
 
-## Deep dive into Principal Component Analysis (PCA)
-
-This Code Pattern will guide you through how to use `Scikit Learn` and `Python` in IBM Watson Studio. The goal is to use a Jupyter notebook to deep dive into Principal Component Analysis (PCA) using various datasets that are shipped with `Scikit Learn`.
+This code pattern will guide you through how to use `Scikit Learn` and `Python` in IBM Watson Studio. The goal is to use a Jupyter notebook to deep dive into Principal Component Analysis (PCA) using various datasets that are shipped with `Scikit Learn`.
 
 We will first give a intuitive explanation of PCA and why it makes sense. Then we will go deeper into the actual derivation of Principal Components using the principle of maximizing the total projected variances onto components. Once we have understood the theory and concept, we will dive deeper into the use cases and examples. We will consider four scenarios with examples.
 
@@ -12,15 +11,15 @@ We will first give a intuitive explanation of PCA and why it makes sense. Then w
 
 In the end, we will summarize our discussion with links to PCA alternatives.
 
-![](doc/source/images/architecture.png)
+![architecture](doc/source/images/architecture.png)
 
 ## Flow
 
 1. Log into IBM Watson Studio service.
-2. Create a Watson Studio project and add assets like Jupyter notebooks.
-3. Launch a Jupyter notebook in Watson Studio.
-4. Deep dive into intuition and theory of PCA.
-5. Use Scikit Learn to work through 4 scenarios:
+1. Create a Watson Studio project and add assets like Jupyter notebooks.
+1. Launch a Jupyter notebook in Watson Studio.
+1. Deep dive into intuition and theory of PCA.
+1. Use Scikit Learn to work through 4 scenarios:
     * Dimension Reduction
     * Visualization
     * Noise Filtering
@@ -40,7 +39,7 @@ In the end, we will summarize our discussion with links to PCA alternatives.
 
 # Steps
 
-This Code Pattern consists of following activities:
+This code pattern consists of following activities:
 
 * [Run a Jupyter notebook in the IBM Watson Studio](#run-a-jupyter-notebook-in-the-ibm-watson-studio).
 * [Deep Dive into Principal Component Analysis](#deep-dive-into-principal-component-analysis).
@@ -48,49 +47,47 @@ This Code Pattern consists of following activities:
 ## Run a Jupyter notebook in the IBM Watson Studio
 
 1. [Sign up for the Watson Studio](#1-sign-up-for-the-watson-studio)
-2. [Create a new Watson Studio project](#2-create-a-new-watson-studio-project)
-3. [Create the notebook](#3-create-the-notebook)
-4. [Run the notebook](#4-run-the-notebook)
-5. [Save and Share](#5-save-and-share)
+1. [Create a new Watson Studio project](#2-create-a-new-watson-studio-project)
+1. [Create the notebook](#3-create-the-notebook)
+1. [Run the notebook](#4-run-the-notebook)
+1. [Save and Share](#5-save-and-share)
 
 ### 1. Sign up for the Watson Studio
 
 Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
-> * View the completed [notebook](https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb) and its outputs, as is.
+> * View the completed [notebook](examples/deep_dive_pca.ipynb) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
-> * When complete, continue this code pattern by jumping ahead to the [Principal Component Analysis in Practice.](#principal-component-analysis-in-practice) section.
+> * When complete, continue this code pattern by jumping ahead to the [PCA notebook contents](#pca-notebook-contents) section.
 
 ### 2. Create a new Watson Studio project
 
 * Select the `New Project` option from the Watson Studio landing page and choose the `Data Science` option.
 
-![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_choices.png)
+![studio-projects](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_choices.png)
 
 * To create a project in Watson Studio, give the project a name and either create a new `Cloud Object Storage` service or select an existing one from your IBM Cloud account.
 
-![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_project.png)
+![studio-new-project](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_project.png)
 
 * Upon a successful project creation, you are taken to a dashboard view of your project. Take note of the `Assets` and `Settings` tabs, we'll be using them to associate our project with any external assets (datasets and notebooks) and any IBM cloud services.
 
-![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_dashboard.png)
+![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_dashboard.png)
 
 ### 3. Create the Notebook
 
-* From the project dashboard view, click the `Assets` tab, click the `+ New notebook` button.
-
-![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_notebook.png)
+* From the project dashboard view, click the `+ Add to project` button, then select `Notebook` as the asset type.
 
 * Give your notebook a name and select your desired runtime, in this case we'll be using python Runtime.
 
 * Now select the `From URL` tab to specify the URL to the notebook in this repository.
 
-![](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
+![studio-notebook-url](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
 
 * Enter this URL:
 
-```
+```bash
 https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb
 ```
 
@@ -150,58 +147,62 @@ options to specify exactly what you want shared from your notebook:
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
 
-## Deep Dive into Principal Component Analysis
+# PCA notebook contents
 
 The notebook is well documented and will guide you through the exercise. Some of the main tasks that will be covered include:
 
-### Principal Component Analysis (PCA) Intuition
+#### Principal Component Analysis (PCA) Intuition
 
 Through various real life examples, we discuss the theory and intuition behind PCA.
 
-### PCA Mathemathical Formulation
+#### PCA Mathemathical Formulation
 
 We cover the mathemathical foundation and derive the key ideas of PCA.
 
-### Principal Component Analysis in Practice
+#### Principal Component Analysis in Practice
 
 We explore PCA through various examples. We will be using `Scikit-learn` and `matplotlib` to dive deep into the following examples:
 
-- PCA for Dimension Reduction
-- PCA for Visualization and Better Insights
-- PCA for Noise Filtering
-- PCA as a Preprocessor for ML algorithms
+* PCA for Dimension Reduction
+* PCA for Visualization and Better Insights
+* PCA for Noise Filtering
+* PCA as a Preprocessor for ML algorithms
 
-## Sample Output
+# Sample Output
 
 The following screen-shot shows derivation of PCA by maximizing total projected variances:
 
-![](doc/source/images/pca_derivation.png)
+![sample-pca-derivation](doc/source/images/pca_derivation.png)
 
 The following screen-shot shows how you can do simple classification using PCA:
 
-![](doc/source/images/pca_classification.png)
+![sample-pca-classification](doc/source/images/pca_classification.png)
 
 The following screen-shots shows how to de-noise a image using PCA:
 
-![](doc/source/images/pca_noisy_input_image.png)
+![sample-pca-input](doc/source/images/pca_noisy_input_image.png)
 
-![](doc/source/images/pca_noisy_output_image.png)
+![sample-pca-output](doc/source/images/pca_noisy_output_image.png)
 
 Awesome job following along! Now go try and take this further or apply it to a different use case!
 
-## Links
+# Links
 
-- Watson Studio: https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html.
-- Scikit Learn: http://scikit-learn.org/stable/
-- Matplotlib: https://matplotlib.org/
-- SeaBorn: https://seaborn.pydata.org
+* [Watson Studio](https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html)
+* [Scikit Learn](http://scikit-learn.org/stable/)
+* [Matplotlib](https://matplotlib.org/)
+* [SeaBorn](https://seaborn.pydata.org)
 
 # Learn more
 
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
-* **Data Science Experience**: Master the art of data science with IBM's [Data Science Experience](https://datascience.ibm.com/)
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+* **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.ibm.com/)
 
-# License
+## License
 
-[Apache 2.0](LICENSE)
+This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+
+[Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
