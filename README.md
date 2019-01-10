@@ -27,14 +27,14 @@ In the end, we will summarize our discussion with links to PCA alternatives.
 
 ## Included components
 
-* [IBM Watson Studio](https://dataplatform.ibm.com): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
-* [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
+* [IBM Watson Studio](https://dataplatform.cloud.ibm.com/): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
+* [Jupyter Notebook](https://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
 
 ## Featured technologies
 
 * [Data Science](https://medium.com/ibm-data-science-experience/): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 * [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
-* [Scikit Learn](http://scikit-learn.org/stable/):  A Python library for providing efficient tools for data mining and machine learning.
+* [Scikit Learn](https://scikit-learn.org/stable/):  A Python library for providing efficient tools for data mining and machine learning.
 * [Matplotlib](https://matplotlib.org/): A Python library integrating matplot for visualization.
 
 # Steps
@@ -54,7 +54,7 @@ This code pattern consists of following activities:
 
 ### 1. Sign up for the Watson Studio
 
-Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
+Log in or sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](examples/deep_dive_pca.ipynb) and its outputs, as is.
@@ -188,7 +188,7 @@ Awesome job following along! Now go try and take this further or apply it to a d
 
 # Links
 
-* [Watson Studio](https://datascience.ibm.com/docs/content/analyze-data/creating-notebooks.html)
+* [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/creating-notebooks.html)
 * [Scikit Learn](http://scikit-learn.org/stable/)
 * [Matplotlib](https://matplotlib.org/)
 * [SeaBorn](https://seaborn.pydata.org)
@@ -196,7 +196,7 @@ Awesome job following along! Now go try and take this further or apply it to a d
 # Learn more
 
 * **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
-* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/code/technologies/data-science/)
+* **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 * **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.ibm.com/)
