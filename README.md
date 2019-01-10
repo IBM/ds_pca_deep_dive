@@ -57,7 +57,7 @@ This code pattern consists of following activities:
 Log in or sign up for IBM's [Watson Studio](https://dataplatform.ibm.com).
 
 > Note: if you would prefer to skip the remaining Watson Studio set-up steps and just follow along by viewing the completed Notebook, simply:
-> * View the completed [notebook](https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/examples/deep_dive_pca.ipynb) and its outputs, as is.
+> * View the completed [notebook](examples/deep_dive_pca.ipynb) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 > * When complete, continue this code pattern by jumping ahead to the [PCA notebook contents](#pca-notebook-contents) section.
 
