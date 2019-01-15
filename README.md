@@ -157,7 +157,7 @@ Through various real life examples, we discuss the theory and intuition behind P
 
 #### PCA Mathemathical Formulation
 
-We cover the mathemathical foundation and derive the key ideas of PCA.
+We cover the mathematical foundation and derive the key ideas of PCA.
 
 #### Principal Component Analysis in Practice
 
