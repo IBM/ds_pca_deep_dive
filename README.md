@@ -37,7 +37,7 @@ In the end, we will summarize our discussion with links to PCA alternatives.
 * [Scikit Learn](https://scikit-learn.org/stable/):  A Python library for providing efficient tools for data mining and machine learning.
 * [Matplotlib](https://matplotlib.org/): A Python library integrating matplot for visualization.
 
-# Steps
+## Steps
 
 This code pattern consists of following activities:
 
@@ -65,35 +65,36 @@ Log in or sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/)
 
 * Select the `New Project` option from the Watson Studio landing page and choose the `Data Science` option.
 
-![studio-projects](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_choices.png)
+![studio-projects](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/new-project-data-science.png)
 
-* To create a project in Watson Studio, give the project a name and either create a new `Cloud Object Storage` service or select an existing one from your IBM Cloud account.
+* Enter a name for the project name and click `Create`.
 
-![studio-new-project](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_project.png)
+* **NOTE**: By creating a project in Watson Studio a free tier `Object Storage` service and `Watson Machine Learning` service will be created in your IBM Cloud account. Select the `Free` storage type to avoid fees.
+
+  ![studio-new-project](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/new-project-data-science-name.png)
 
 * Upon a successful project creation, you are taken to a dashboard view of your project. Take note of the `Assets` and `Settings` tabs, we'll be using them to associate our project with any external assets (datasets and notebooks) and any IBM cloud services.
 
-![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_dashboard.png)
+  ![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/overview-empty.png)
 
 ### 3. Create the Notebook
 
-* From the project dashboard view, click the `+ Add to project` button, then select `Notebook` as the asset type.
+* From the new project `Overview` panel, click `+ Add to project` on the top right and choose the `Notebook` asset type.
 
-* Give your notebook a name and select your desired runtime, in this case we'll be using python Runtime.
+  ![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/add-assets-notebook.png)
 
-* Now select the `From URL` tab to specify the URL to the notebook in this repository.
+* Fill in the following information:
 
-![studio-notebook-url](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
+  * Select the `From URL` tab. [1]
+  * Enter a `Name` for the notebook and optionally a description. [2]
+  * Under `Notebook URL` provide the following url: [https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb](https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb) [3]
+  * For `Runtime` select the `Python 3.5` option. [4]
 
-* Enter this URL:
-
-```bash
-https://github.com/IBM/pca-deep-dive-using-watson-studio/blob/master/notebooks/deep_dive_pca.ipynb
-```
+  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-py35.png)
 
 * Click the `Create` button.
 
-> Note: If queried for a Python version, select version `3.5`.
+* **TIP:** Once successfully imported, the notebook should appear in the `Notebooks` section of the `Assets` tab.
 
 ### 4. Run the notebook
 
@@ -147,19 +148,19 @@ options to specify exactly what you want shared from your notebook:
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
 
-# PCA notebook contents
+## PCA notebook contents
 
 The notebook is well documented and will guide you through the exercise. Some of the main tasks that will be covered include:
 
-#### Principal Component Analysis (PCA) Intuition
+### Principal Component Analysis (PCA) Intuition
 
 Through various real life examples, we discuss the theory and intuition behind PCA.
 
-#### PCA Mathemathical Formulation
+### PCA Mathemathical Formulation
 
 We cover the mathemathical foundation and derive the key ideas of PCA.
 
-#### Principal Component Analysis in Practice
+### Principal Component Analysis in Practice
 
 We explore PCA through various examples. We will be using `Scikit-learn` and `matplotlib` to dive deep into the following examples:
 
@@ -168,7 +169,7 @@ We explore PCA through various examples. We will be using `Scikit-learn` and `ma
 * PCA for Noise Filtering
 * PCA as a Preprocessor for ML algorithms
 
-# Sample Output
+## Sample Output
 
 The following screen-shot shows derivation of PCA by maximizing total projected variances:
 
@@ -186,14 +187,14 @@ The following screen-shots shows how to de-noise a image using PCA:
 
 Awesome job following along! Now go try and take this further or apply it to a different use case!
 
-# Links
+## Links
 
 * [Watson Studio](https://dataplatform.cloud.ibm.com/docs/content/analyze-data/creating-notebooks.html)
 * [Scikit Learn](http://scikit-learn.org/stable/)
 * [Matplotlib](https://matplotlib.org/)
 * [SeaBorn](https://seaborn.pydata.org)
 
-# Learn more
+## Learn more
 
 * **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
